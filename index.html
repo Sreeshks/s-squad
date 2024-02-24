@@ -9,6 +9,7 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #ffdddd; /* Rose color background */
   }
 
   .navbar {
@@ -33,14 +34,36 @@
 
   .main-content {
     padding: 20px;
+    display: flex;
+    align-items: center;
   }
 
-  .section {
-    height: 500px;
-    background-color: #f2f2f2;
+  .left-content {
+    flex: 1;
+    padding-right: 20px;
+  }
+
+  .right-content {
+    flex: 1;
+    text-align: right;
+  }
+
+  .shop-now-button {
+    background-color: #853500;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
     text-align: center;
-    line-height: 500px;
-    font-size: 30px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .image-container img {
+    max-width: 100%;
+    height: auto;
   }
 </style>
 </head>
@@ -53,6 +76,26 @@
   <a href="#blogs">Read Our Blogs</a>
   <a href="showcase.html">Showcase</a>
   <a href="contact.html">Contact Us</a>
+</div>
+
+<div class="main-content">
+  <div class="left-content">
+    <p>
+      <h1>
+        NEW
+      </h1><BR>
+      <h1>Spring/Summer
+      Collection
+    </h1>
+      <br>
+      Our favourite collection of the year is here Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis.</p>
+    <button class="shop-now-button">Shop Now</button>
+  </div>
+  <div class="right-content">
+    <div class="image-container">
+      <img src="https://c0.wallpaperflare.com/preview/289/223/656/20-25-year-old-adult-couch-happy.jpg" alt="Image">
+    </div>
+  </div>
 </div>
 
 </body>
